@@ -8,15 +8,15 @@ public class ResultsPage {
 
     ElementHelper elementHelper;
 
-    By shareIcon = By.id("com.sahibinden:id/action_share");
+    By shareIcon=By.id("com.sahibinden:id/action_share");
 
     public ResultsPage(WebDriver driver) {
+
         this.elementHelper = new ElementHelper(driver);
     }
+
 
     public void checkShareIcon() {
         elementHelper.checkElement(shareIcon);
     }
-
-
 }

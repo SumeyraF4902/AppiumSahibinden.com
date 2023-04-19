@@ -15,6 +15,7 @@ public class CategoriesPage {
     }
 
     public void clickTab(String tab) {
+
         elementHelper.clickElementWithText(tabs,tab);
     }
 

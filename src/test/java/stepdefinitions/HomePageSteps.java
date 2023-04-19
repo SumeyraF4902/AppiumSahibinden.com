@@ -6,16 +6,16 @@ import pages.HomePage;
 import utils.DriverManager;
 
 public class HomePageSteps {
-    HomePage homePage = new HomePage(DriverManager.getDriver());
+    HomePage homePage=new HomePage(DriverManager.getDriver());
 
-    @Given("user should see the Home Page")
+    @Given("user should see the home page")
     public void userShouldSeeTheHomePage() {
         homePage.checkLoginLogo();
     }
 
-    @When("taps {string} on Home Page")
-    public void tapsOnHomePage(String tab) {
+
+    @When("user taps {string} on Home Page")
+    public void userTapsOnHomePage(String tab) {
         homePage.clickTab(tab);
     }
-
 }
